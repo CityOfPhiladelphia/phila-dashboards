@@ -353,32 +353,32 @@ function drawBrowserStats(ids) {
  * Draw the a chart.js polar area chart with data from the specified view that
  * compares sessions from mobile, desktop, and tablet over the past seven days.
  */
-function drawDeviceUsage(ids) {
-  var devices = query({
-    'ids': ids,
-    'dimensions': 'ga:deviceCategory',
-    'metrics': 'ga:sessions',
-  });
-  
-
-  var data = {
-      labels : labels,
-      datasets : 
-        {
-          fillColor : "rgba(151,187,205,0.5)",
-          strokeColor : "rgba(151,187,205,1)",
-        }
-      };
-    //var colors = ['#F7464A','#E2EAE9','#D4CCC5','#949FB1','#4D5360'].reverse();
-
-    new Chart(makeCanvas('chart4')).Bar(data, {
-      animationSteps: 60,
-      animationEasing: 'easeInOutQuart',
-      showTooltips: true
-    });
-
-    setLegend('legend4', data);
-  };
+//function drawDeviceUsage(ids) {
+//  var devices = query({
+//    'ids': ids,
+//    'dimensions': 'ga:deviceCategory',
+//    'metrics': 'ga:sessions',
+//  });
+//  
+//
+//  var data = {
+//      labels : labels,
+//      datasets : 
+//        {
+//          fillColor : "rgba(151,187,205,0.5)",
+//          strokeColor : "rgba(151,187,205,1)",
+//        }
+//      };
+//    //var colors = ['#F7464A','#E2EAE9','#D4CCC5','#949FB1','#4D5360'].reverse();
+//
+//    new Chart(makeCanvas('chart4')).Bar(data, {
+//      animationSteps: 60,
+//      animationEasing: 'easeInOutQuart',
+//      showTooltips: true
+//    });
+//
+//    setLegend('legend4', data);
+//  };
 }
 
 </script>
